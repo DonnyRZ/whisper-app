@@ -74,9 +74,9 @@ def print_results(result):
 
 def main():
     parser = argparse.ArgumentParser(description="Transcribe audio with Whisper")
-    parser.add_argument("--model", "-m", default="base", 
+    parser.add_argument("--model", "-m", default="small", 
                         choices=["tiny", "tiny.en", "base", "base.en", "small", "small.en", "medium", "medium.en", "large", "turbo"],
-                        help="Model size to use (default: base)")
+                        help="Model size to use (default: small)")
     parser.add_argument("--device", "-d", default="cuda", 
                         choices=["cpu", "cuda"], 
                         help="Device to use (default: cuda)")
