@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#status {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+.recording-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.record-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.record-button:hover {
+    background-color: #c82333;
+}
+
+.record-button.recording {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #6c757d;
+}
+
+.controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.controls button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.result-section {
+    margin-top: 30px;
+}
+
+.result-section h2 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.result-text {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 100px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.processing-time {
+    margin-top: 10px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 0 10px;
+        padding: 15px;
+    }
+    
+    .controls button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
